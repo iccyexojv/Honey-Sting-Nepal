@@ -192,6 +192,8 @@ Environment configuration via .env
 ****This project was developed during:****
 
 **🚀 SANDBOX 3.0 Hackathon
+TEAM NAME : ZENOVA
+TEAM MEMBERS :
 
         1.Sujan Shrestha
         2.Srijan Dangol

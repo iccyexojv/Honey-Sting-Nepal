@@ -189,7 +189,16 @@ Git version control
 Environment configuration via .env
 
 
+****This project was developed during:****
 
+**🚀 SANDBOX 3.0 Hackathon
+
+👥 Team Name: ZENOVA
+        1.Sujan Shrestha
+        2.Srijan Dangol
+        3.Prashank Pant
+        4.Shahil Jung Gautam
+💡 Idea & Mentor: UMANGA PATHAK**
 
 ---
 
@@ -209,13 +218,4 @@ php artisan migrate:fresh --seed
 
 ---
 
-****This project was developed during:****
 
-**🚀 SANDBOX 3.0 Hackathon
-
-👥 Team Name: ZENOVA
-        1.Sujan Shrestha
-        2.Srijan Dangol
-        3.Prashank Pant
-        4.Shahil Jung Gautam
-💡 Idea & Mentor: UMANGA PATHAK**

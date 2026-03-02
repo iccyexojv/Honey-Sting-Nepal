@@ -1,78 +1,221 @@
-<<<<<<< HEAD
-# Zenova
-=======
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🐝 Honey-Sting Nepal  
+### *Detect. Deceive. Defend.*  
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+> An IoT & Web-Based Honeypot System to Track and Analyze Scammers in Nepal 🇳🇵  
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📌 Introduction
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+With the rapid growth of digital banking, mobile wallets (eSewa, Khalti), online transactions, and ATM usage in Nepal, cyber fraud cases have increased significantly. From OTP phishing and wallet impersonation scams to ATM skimming and card cloning, digital criminals are continuously evolving.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Nepal’s cybersecurity ecosystem is still developing, and proactive defense mechanisms are limited. Most systems react **after** fraud occurs rather than preventing it in real-time.
 
-## Learning Laravel
+**Honey-Sting Nepal** is designed to address this challenge by deploying controlled fake vulnerable environments (honeypots) to attract scammers, monitor their behavior, analyze attack patterns, and generate actionable intelligence.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🎯 Project Objectives
 
-## Laravel Sponsors
+- 🔍 Detect and monitor scam attempts in controlled environments  
+- 🧠 Analyze attacker behavior and identify common fraud patterns  
+- 🌐 Track IP addresses and suspicious device signatures  
+- ⚡ Generate real-time alerts and risk scores  
+- 📊 Visualize attack analytics through an interactive web dashboard  
+- 🛡️ Contribute to proactive fraud prevention strategies in Nepal  
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 🛠️ How the System Works
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Honey-Sting Nepal operates in a structured multi-layer workflow:
 
-## Contributing
+### Step 1: Deploy Honeypot Environment
+A fake vulnerable system (e.g., phishing login page, fake wallet portal, simulated ATM interface) is deployed to attract scammers.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Step 2: Attacker Interaction
+When a scammer interacts with the system:
+- Login attempts are recorded  
+- IP address is captured  
+- Device/browser fingerprint is logged  
+- Time, frequency, and behavioral metrics are collected  
 
-## Code of Conduct
+### Step 3: IoT Monitoring Layer
+IoT devices such as **ESP32** or **Raspberry Pi** act as monitoring nodes:
+- Log suspicious activity  
+- Send real-time data to backend server  
+- Monitor environmental triggers (optional physical trap setups)  
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Step 4: Backend Processing
+The backend:
+- Stores logs in a secure database  
+- Assigns a dynamic **risk score**  
+- Identifies repeat offenders  
+- Generates alerts for high-risk patterns  
 
-## Security Vulnerabilities
+### Step 5: Web Dashboard Analytics
+Administrators can:
+- View real-time attack logs  
+- Monitor geographic attack sources  
+- Analyze fraud trends  
+- Access risk scoring reports  
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 🏗️ System Architecture
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
->>>>>>> 3c26ede (laravel setup)
-## Fraud Detection Demo
+Technology Stack – Honey-Sting Nepal 🐝
 
-- **What:** A demonstration fraud-detection pipeline that seeds demo data, segments cards and payment methods by whether they are flagged as fraud, runs a statistical/behavioral risk engine, and emits a CSV report.
-- **How to run:**
+Based on the Proof of Concept System Flow, the project integrates IoT hardware, secure backend processing, and a real-time monitoring dashboard.
 
-  ```bash
-  php scripts/simulate_fraud.php --seed=123
-  ```
+🔌 1. IoT & Hardware Layer
+🟢 Arduino UNO (Merchant Node)
 
-  The script bootstraps the app, creates demo customers/merchants/cards/payment-methods, seeds transactions (including patterns for flagged cards), runs `FraudDetectionService`, and writes `storage/reports/fraud_report.csv`.
+Reads NFC/RFID card interactions
 
-- **Notes:**
-  - Requires a configured DB and that migrations have been run (including the card/payment_method migrations).
-  - Seeders now generate random users, cards, payment methods, and transactions covering normal and anomalous behavior; run `php artisan migrate:fresh --seed` to populate.
-  - This project includes `app/Services/FraudDetectionService.php` which implements multiple statistical checks (robust z-score, velocity, Benford, concentration, etc.) and returns a risk score, level, action, and triggers.
+Processes input locally
+
+Communicates with backend via serial/WiFi module
+
+📡 RFID / NFC Module
+
+Detects suspicious card taps
+
+Captures unique card identifiers (UID)
+
+Simulates fraud interaction environment
+
+🌐 Communication Module
+
+ESP8266 / ESP32 (WiFi-enabled microcontroller)
+
+Sends JSON payload to backend API
+
+Enables real-time cloud communication
+
+🔄 2. Data Transmission Layer
+📦 JSON Payload
+
+Structured data format
+
+Includes:
+
+Card UID
+
+Timestamp
+
+Device ID
+
+Risk indicators
+
+Attempt count
+
+Secure transmission via:
+
+REST API
+
+HTTPS Protocol
+
+🖥️ 3. Backend Layer
+🚀 Laravel Backend Framework
+
+RESTful API architecture
+
+Handles authentication & validation
+
+Processes incoming JSON payloads
+
+Implements risk scoring logic
+
+Stores structured fraud logs
+
+🗄️ Database
+
+MySQL / PostgreSQL
+
+Stores:
+
+Transaction logs
+
+Device logs
+
+IP addresses
+
+Risk scores
+
+Alert history
+
+📊 4. Admin Monitoring Dashboard
+🌐 Frontend
+
+Blade / React.js (depending on implementation)
+
+TailwindCSS for UI styling
+
+Responsive admin interface
+
+📈 Visualization & Alerts
+
+Chart libraries (ApexCharts / Chart.js)
+
+Real-time suspicious activity feed
+
+Red Alert trigger system
+
+Risk-based flagging system
+
+🔐 5. Security Components
+
+HTTPS encryption
+
+API authentication (JWT / Sanctum)
+
+Input validation & sanitization
+
+Rate limiting
+
+Secure device identification
+
+☁️ 6. Deployment & Infrastructure
+
+Localhost development (XAMPP / Laragon)
+
+VPS / Cloud hosting
+
+Nginx / Apache server
+
+Git version control
+
+Environment configuration via .env
+
+
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/honey-sting-nepal.git
+cd honey-sting-nepal
+
+### 2️⃣ Backend Setup
+composer run setup
+Create database
+Update .env file
+php artisan migrate:fresh --seed
+
+---------------------------------------------------------------------------------------------------------------------
+
+****This project was developed during:****
+
+**🚀 SANDBOX 3.0 Hackathon
+
+👥 Team Name: ZENOVA
+        1.Sujan Shrestha
+        2.Srijan Dangol
+        3.Prashank Pant
+        4.Shahil Jung Gautam
+💡 Idea & Mentor: UMANGA PATHAK**

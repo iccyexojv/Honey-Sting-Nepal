@@ -207,7 +207,7 @@ Create database
 Update .env file
 php artisan migrate:fresh --seed
 
----------------------------------------------------------------------------------------------------------------------
+---
 
 ****This project was developed during:****
 

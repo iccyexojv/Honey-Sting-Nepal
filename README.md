@@ -193,7 +193,6 @@ Environment configuration via .env
 
 **🚀 SANDBOX 3.0 Hackathon
 
-👥 Team Name: ZENOVA
         1.Sujan Shrestha
         2.Srijan Dangol
         3.Prashank Pant

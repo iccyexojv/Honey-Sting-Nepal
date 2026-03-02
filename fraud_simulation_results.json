@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2026-02-27T07:04:18.967685",
+    "type": "Normal-1",
+    "customer_id": 10,
+    "amount": 50.0,
+    "card_id": 1,
+    "merchant_id": 1,
+    "status_code": 422,
+    "response": {
+      "error": "Payment method does not belong to merchant"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T07:04:19.516664",
+    "type": "Outlier-1",
+    "customer_id": 11,
+    "amount": 20000.0,
+    "card_id": 2,
+    "merchant_id": 99,
+    "status_code": 422,
+    "response": {
+      "error": "Payment method does not belong to merchant"
+    }
+  }
+]
